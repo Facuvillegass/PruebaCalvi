@@ -1,0 +1,265 @@
+@charset "UTF-8";
+/*Import*/
+@media screen and (max-width: 420px) {
+  header {
+    width: auto;
+  }
+  .indexMain {
+    font-size: 1rem;
+    width: auto;
+  }
+  .mediaIndex {
+    width: auto;
+  }
+  /*Footer*/
+  .contentFooter {
+    background-color: aqua;
+  }
+  .contentInfoFooter, .contentEnviosFooter {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    font-size: 1rem;
+    width: auto;
+  }
+  .contentEnviosFooter {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    font-size: 1rem;
+    width: auto;
+  }
+  .contentIconosFooter {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    font-size: 1rem;
+    width: auto;
+  }
+  .CopyRfooter {
+    width: auto;
+  }
+  .subtituloFooter {
+    height: 10px;
+  }
+  .textoFooter {
+    margin: 2px;
+  }
+  /*Página productos*/
+  .card:hover {
+    -webkit-transform: scale(1, 0.9);
+            transform: scale(1, 0.9);
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
+  h5 {
+    text-align: center;
+  }
+  /*Página quienes somos*/
+  .contendor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 200%;
+    margin-top: -200px;
+  }
+  .contentImagen {
+    margin-left: 3rem;
+  }
+}
+
+/*Página Envios*/
+.videoEnvios iframe {
+  padding: 1rem;
+  position: relative;
+  height: auto;
+  width: auto;
+  right: 10%;
+}
+
+/*Página Contacto*/
+.container .row {
+  width: 70%;
+}
+
+.container .text-center {
+  position: relative;
+  left: 15%;
+}
+
+/*Variables*/
+/*Mixin*/
+.font {
+  font-family: roboto;
+}
+
+/*Header*/
+header {
+  background-color: black;
+  color: #fffefe;
+  text-align: center;
+  font-family: roboto;
+  font-size: 25px;
+  padding: 2px;
+}
+
+.redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 1rem;
+}
+
+/*Pagina Index*/
+p {
+  text-align: center;
+  margin: 60px;
+  font-family: poppins;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.textoFotoIndex {
+  color: #fffefe;
+}
+
+/*Pagina Productos*/
+.card {
+  margin: 5px;
+}
+
+.card:hover {
+  -webkit-transform: scale(1, 0.9);
+          transform: scale(1, 0.9);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.card:hover h5 {
+  text-align: center;
+}
+
+/*Pagina Quienes Somos*/
+.contendor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contendor .contentTexto {
+  width: 50%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 250px;
+}
+
+.contendor .contentTexto .textoP {
+  font-family: poppins;
+}
+
+.contentImagen {
+  height: 30%;
+  width: 40%;
+  padding: 25px;
+}
+
+.contentImagen .imagenJean {
+  height: auto;
+  width: 100%;
+}
+
+/*Pagina Envios*/
+.contenedorTexto {
+  text-align: center;
+}
+
+.videoEnvios iframe {
+  padding: 1rem;
+  position: relative;
+  left: 40%;
+}
+
+/*Pagina Contacto*/
+.esteticaForm {
+  position: relative;
+  left: 30%;
+}
+
+.buttonEnviar {
+  margin: 5px;
+  background-color: black;
+  font-family: roboto;
+  position: relative;
+  right: 15%;
+}
+
+/*Footer*/
+.contentFooter {
+  max-width: 100%;
+  background-color: black;
+  font-family: roboto;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 2rem;
+}
+
+.contentInfoFooter, .contentEnviosFooter {
+  color: #fffefe;
+  text-align: center;
+  padding: 10px;
+}
+
+.contentIconosFooter {
+  color: #fffefe;
+}
+
+.CopyRfooter {
+  color: black;
+  text-align: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  background-color: #fffefe;
+  padding: 15px;
+}
+
+.textoFooter {
+  margin: 2rem;
+  background-color: black;
+  color: #fffefe;
+  text-align: center;
+  font-family: roboto;
+}
+
+.subtituloFooter {
+  font-size: 1.3rem;
+  margin-bottom: 1.6rem;
+}
+/*# sourceMappingURL=style.css.map */

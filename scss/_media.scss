@@ -1,0 +1,92 @@
+@mixin generalFooter {
+    display: grid;
+    flex-direction: column;
+    grid-column: 1/4;
+    font-size: 1rem;
+    width: auto;}
+
+@media screen and (max-width: 420px){
+    header{
+        width: auto;}
+      
+    .indexMain{
+          font-size: 1rem;
+          width: auto;
+      }
+
+    .mediaIndex{
+          width: auto;
+      }
+
+      /*Footer*/
+
+    .contentFooter{
+        background-color: aqua;
+    }
+
+    .contentInfoFooter{
+      @include generalFooter;}
+    
+    .contentEnviosFooter{
+      @include generalFooter;}
+    
+    .contentIconosFooter{
+      @include generalFooter;}
+
+    .CopyRfooter{
+          width: auto;
+          }
+
+    .subtituloFooter{
+        height: 10px;}
+    
+    .textoFooter{
+        margin: 2px;}
+
+     /*Página productos*/   
+        
+    .card:hover{
+        transform: scale(1, 0.9);
+        transition: all 2s;}
+        
+    h5{
+       text-align: center;}
+                
+    /*Página quienes somos*/
+    .contendor{
+       flex-direction: column;
+       width: 200%;
+       margin-top: -200px;
+    }
+
+    .contentImagen{
+        margin-left: 3rem;
+    }
+
+           
+    }
+    
+     /*Página Envios*/
+
+    .videoEnvios{
+        iframe{
+            padding: 1rem;
+            position: relative;
+            height: auto;
+            width: auto;
+            right: 10%;
+        }
+    }
+
+    /*Página Contacto*/
+    .container {
+        .row{
+            width: 70%;
+        }
+
+    .text-center{
+        position: relative;
+        left: 15%;
+    }
+    }
+     

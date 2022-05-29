@@ -1,0 +1,155 @@
+/*Import*/
+@import "media";
+
+/*Variables*/
+$color-negro:rgb(0, 0, 0);
+$color-blanco:rgb(255, 254, 254);
+$color-gris:rgb(80, 78, 78);
+$font-roboto:roboto;
+
+/*Mixin*/
+@mixin estiloTitulo {
+      background-color: $color-negro;
+      color: $color-blanco;
+      text-align: center;
+      font-family: roboto;}
+
+
+.font{
+  font-family: $font-roboto;}
+
+/*Header*/
+
+header{
+        @include estiloTitulo;
+        font-size: 25px;
+        padding: 2px;}
+
+.redes{
+          display: flex;
+          justify-content: flex-end;
+          margin-right: 1rem;}
+
+
+
+    /*Pagina Index*/
+p{
+          text-align: center;
+          margin: 60px;
+          font-family:poppins;}
+
+a:hover{ 
+          text-decoration:underline;}
+        
+
+
+.textoFotoIndex{
+          color: $color-blanco;}
+
+    /*Pagina Productos*/
+  
+.card{
+          margin: 5px;
+    
+          &:hover{
+          transform: scale(1, 0.9);
+          transition: all 2s;
+  
+          h5{
+            text-align: center;}
+                 }
+      }
+  
+  /*Pagina Quienes Somos*/
+  
+.contendor{
+          display: flex;
+
+  
+          .contentTexto{
+            width: 50%;
+            text-align: center;
+            align-items: center;
+            margin-top: 250px;
+          
+        
+          .textoP{
+            font-family: poppins;}
+                        }
+          }
+  
+.contentImagen{
+            height: 30%;
+            width: 40%;
+            padding: 25px;
+  
+          .imagenJean{
+            height: auto;
+            width: 100%;}
+              }
+  
+  
+  /*Pagina Envios*/
+  
+.contenedorTexto{
+            text-align: center;}
+  
+.videoEnvios{
+    iframe{
+           padding: 1rem;
+           position: relative;
+           left: 40%;}
+          }
+  
+  /*Pagina Contacto*/
+
+
+  .esteticaForm{
+    position: relative;
+    left: 30%;}
+
+
+.buttonEnviar{
+    margin: 5px;
+    background-color: $color-negro;
+    font-family: $font-roboto;
+    position: relative;
+    right: 15%;}
+      
+      
+      /*Footer*/
+
+.contentFooter {
+            max-width: 100%;
+            background-color: $color-negro;
+            font-family: roboto;
+            margin: auto;
+            display: grid;
+            margin-top: 2rem;}
+      
+.contentInfoFooter{
+            color: $color-blanco;
+            text-align: center;
+            padding: 10px;}
+      
+.contentEnviosFooter{
+            @extend .contentInfoFooter;}
+      
+.contentIconosFooter{
+            color: $color-blanco;}
+      
+.CopyRfooter{
+            color:$color-negro;
+            text-align: center;
+            grid-column: 1/4;
+            background-color: $color-blanco;
+            padding: 15px;}
+      
+.textoFooter{
+            margin: 2rem;
+            @include estiloTitulo();}
+      
+.subtituloFooter{
+            font-size: 1.3rem;
+            margin-bottom: 1.6rem;}
+
